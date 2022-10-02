@@ -10,3 +10,7 @@ function login(element) {
         window.location.href = '../Visitor/visitor.html'
     }
 }
+
+function resetPassword(){
+    window.alert("Password has been sent to your email.");
+}
