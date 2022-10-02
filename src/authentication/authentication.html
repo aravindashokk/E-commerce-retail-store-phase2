@@ -90,10 +90,31 @@
         <div class="d-flex flex-direction-column align-items-center">
           <button class="btn login-btn" type="submit" onclick="login(email)">Sign in</button>
           </br>
+          <p><span style="cursor: pointer; font-weight: 500; color: var(--primary-bg-1);"
+            onclick="showForgotPassword();">Forgot Password? </span></p><!--Vignesh-->
           <p>Don't have an account yet? <span style="cursor: pointer; font-weight: 500; color: var(--primary-bg-1);"
               onclick="showSignUp();">Register</span> here</p>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- Forgot password - Vignesh -->
+  <div class="d-flex flex-direction-row justify-around forgotPassword-section d-none fade">
+    <div class="forgotPassword-container">
+      <div class="d-flex justify-center forgotPassword-header font-oswald">Password Assistance</div>
+      <form class="d-flex flex-direction-column w-100" method="post" enctype="text/html">
+        <div class="d-flex flex-direction-column">
+          <input type="email" id="email" name="email" placeholder="Username / Email">
+        </div>
+        <div class="d-flex flex-direction-column align-items-center">
+          <button class="btn continue-btn" type="submit" onclick="login(email)">Continue</button>
+          </br>
+        </div>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="../../assets/images/signup.png" width="550px" height="500px">
     </div>
   </div>
 
@@ -128,11 +149,20 @@
     function showLogin() {
       document.getElementsByClassName('login-section')[0].style.display = "flex";
       document.getElementsByClassName('registration-section')[0].style.display = "none";
+      document.getElementsByClassName('forgotPassword-section')[0].style.display = "none";
     }
 
     function showSignUp() {
       document.getElementsByClassName('login-section')[0].style.display = "none";
       document.getElementsByClassName('registration-section')[0].style.display = "flex";
+      document.getElementsByClassName('forgotPassword-section')[0].style.display = "none";
+    }
+
+    //Vignesh
+    function showForgotPassword() {
+      document.getElementsByClassName('login-section')[0].style.display = "none";
+      document.getElementsByClassName('registration-section')[0].style.display = "none";
+      document.getElementsByClassName('forgotPassword-section')[0].style.display = "flex";
     }
   </script>
 </body>
