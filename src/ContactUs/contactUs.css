@@ -1,7 +1,7 @@
 /*  
-Thirumurthy,Sujitraj , UTA ID : 1001830297 
-Selvaraj, Nikil Nandha, UTA ID : 1002004184
-Mandava, Sai Venkat, UTA: 1001955604
+Aravind Ashok Kumar 1001944888
+Neeharika Kosana 1001960736
+Vignesh Manikandan 1002012757
 */
 
 /* FONT USED : Roboto Sans Serif , Oswald Sans Serif ,Damion cursive */
@@ -108,6 +108,49 @@ body {
   height: 100%;
   overflow-y: scroll;
 }
+
+.footer {
+  padding: 40px 0;
+  color: #000;
+  
+}  
+
+
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13;
+  color: #aaa;
+}
+
+
 
 
 /* media query for contact us page for device width less than 480px  */
