@@ -26,6 +26,43 @@ Mandava, Sai Venkat, UTA: 1001955604
   --state-warning: #f9a825;
   --state-success: #558b2f;
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#tray {
+  height:40px;
+  width:40px;
+  background-color:blue;
+  display:block;
+  border-radius:50%;
+  text-align:center;
+  cursor:pointer;
+  transition-duration:0.5s;
+  left: 25px;
+  bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  #tray:hover {
+  box-shadow: 0 0 10px rgb(141, 141, 141);
+  }
+  
+  #tray i {
+  color: orange;
+  margin-top: 8px;
+  font-size: 20px;
+  }
+  .count {
+  position: absolute;
+  background-color: rgb(248, 141, 0);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  color: #fff;
+  font-weight: 300;
+  display:none;
+  }
+  
 body {
   /* use the font */
   font-family: "Roboto", sans-serif;
