@@ -46,10 +46,17 @@ body {
 }
 
 .login-container,
-.registration-container,
-.forgotPassword-container {
+.registration-container{
   border-radius: 5px;
   min-height: 500px;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.4);
+  background-color: var(--color-light);
+  color: var(--primary-label-2) !important;
+}
+
+.forgotPassword-container {
+  border-radius: 5px;
+  min-height: 40%;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.4);
   background-color: var(--color-light);
   color: var(--primary-label-2) !important;
@@ -101,7 +108,8 @@ body {
 login and register button styles */
 
 .login-btn,
-.register-btn {
+.register-btn,
+.continue-btn {
   width: 75%;
   height: 40px;
   margin-top: 20px;
@@ -128,6 +136,9 @@ login and register button styles */
   }
 
 
+  .forgotPassword-section{
+    height: 1000px;
+  }
 
   .registration-section{
     justify-content: center !important;
