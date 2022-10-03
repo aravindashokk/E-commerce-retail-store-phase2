@@ -1,6 +1,6 @@
 Readme file
 
-double tap on the index.html to open the home page of instawash and can navigate to other pages from here.
+Index.html file is clicked-first and navigated to all pages Mercado Escolar
 
 to login as user: give 'user' for username
 
