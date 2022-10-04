@@ -19,7 +19,7 @@
 
 <body>
   <header class="d-flex justify-between nav-header">
-    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">Mercado Escolar</a></div>
     <nav class="navbar">
       <ul class="d-flex justify-around flex-direction-row">
         <li class="nav-item">
@@ -120,12 +120,10 @@
               <input type="text" id="cname" name="cardname" placeholder="Enter Cardholder Name">
               <label for="ccnum">Credit card number</label>
               <input type="text" id="ccnum" name="cardnumber" placeholder="Enter 16-digit card number">
-              <label for="expmonth">Exp Month</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="Enter expiry month">
               <div class="row">
                 <div class="col-50">
-                  <label for="expyear">Exp Year</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="Enter expiry year">
+                  <label for="expyear">Expiry Month/Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="Enter expiry month/year">
                 </div>
                 <div class="col-50">
                   <label for="cvv">CVV</label>
@@ -151,29 +149,40 @@
             </div>
             <div class="Cart-Items">
                 <div class="image-box">
-                <img src="images/apple.png" style="height:120px" />
+                <img src="./assets/images/1.png" style="height:120px" />
                 </div>
                 <div class="about">
-                <h1 class="title">Apple Juice</h1>
-                <h3 class="subtitle">250ml</h3>
-                <img src="images/veg.png" style="height:30px"/>
+                <h1 class="title">Product 1</h1>
+                <h3 class="subtitle">details</h3>
                 </div>
-                <div class="counter"></div>
-                <div class="prices"></div>
+                <div class="prices">
+                    <div class="amount">$2.99</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
             </div>
-            <div class="prices">
-                <div class="amount">$2.99</div>
-                <div class="save"><u>Save for later</u></div>
-                <div class="remove"><u>Remove</u></div>
-                <hr>
-                <div class=”checkout”>
-                    <div class=”total”>
-                    <div>
-                    <div class=”Subtotal”>Sub-Total</div>
-                    <div class=”items”>2 items</div>
-                    </div>
-                    <div class=”total-amount”>$6.18</div>
+            <div class="Cart-Items">
+                <div class="image-box">
+                <img src="./assets/images/1.png" style="height:120px" />
                 </div>
+                <div class="about">
+                <h1 class="title">Product 2</h1>
+                <h3 class="subtitle">details</h3>
+                </div>
+                <div class="prices">
+                    <div class="amount">$4.99</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
+            </div>
+            <hr>
+            <div class="checkout">
+                <div class="total">
+                <div>
+                <div class="Subtotal">Sub-Total</div>
+                <div class="items">2 items</div>
+                </div>
+                <div class="total-amount">$7.98</div>
             </div>
         </div>
       </div>
