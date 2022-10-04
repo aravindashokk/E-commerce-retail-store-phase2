@@ -34,7 +34,7 @@ body {
     background-attachment: fixed;
   }
   
-  /* manager and admin page container styles */
+  /* Super admin page container styles */
   .container {
     display: flex;
     justify-content: center;
@@ -69,14 +69,6 @@ body {
     width: 100%;
     height: 100%;
     padding: 40px 0px 40px 40px;
-  }
-
-  .order-section {
-    max-height: 420px;
-    height: 400px;
-    overflow: scroll;
-    width: 46.8%;
-    margin-top: 20px;
   }
   
   /* Table styles */
