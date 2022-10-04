@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <!-- Import local css/ JS files -->
+        <link href="./Reports.css" rel="stylesheet" type="text/css">
+        <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./manager.js"></script>
+<!-- import font packages -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+<!-- Add title and favicon -->
+<title>Mercado Escolar</title>
+<link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+<section>
+
+    <!-- Header section title -->
+    <div class="container" id="heading-container">
+        <div class="font-oswald heading"> Manage Daily Tasks </div>
+    </div>
+
+    <!-- Admin page graph ans stats -->
+    <div id="graph-view" class="graph-view d-flex flex-direction-column w-100">
+        <div class="d-flex w-100 number-container">
+            <div class="number-card font-oswald">
+                <span>Total No of users:</span>
+                <span class="font-roboto">230</span>
+            </div>
+            <div class="number-card font-oswald">
+                <span>Active users:</span>
+                <span class="font-roboto">212</span>
+            </div>
+            <div class="number-card font-oswald">
+                <span>Total No of schools:</span>
+                <span class="font-roboto">15</span>
+            </div>
+            <div class="number-card font-oswald">
+                <span>No of available Products:</span>
+                <span class="font-roboto">32</span>
+            </div>
+        </div>
+        <div class="carousel-container d-flex flex-direction-column align-items-center">
+            <div class="slides fade w-100">
+                <img src="../../assets/images/ghana-stock-market.png">
+            </div>
+
+            <div class="slides fade w-100">
+                <img src="../../assets/images/R.jfif">
+            </div>
+
+            <div class="slides fade w-100">
+                <img src="../../assets/images/4_Bar_Chart_10_Seconds.webp">
+            </div>
+
+            <!-- The pills -->
+            <div class="pill-container">
+                <span class="pills" onclick="currentSlide(1)"></span>
+                <span class="pills" onclick="currentSlide(2)"></span>
+                <span class="pills" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("slides");
+                    var pills = document.getElementsByClassName("pills");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < pills.length; i++) {
+                        pills[i].className = pills[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "flex";
+                    pills[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+    </div>
+</section>
+
+
+</html>

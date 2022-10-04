@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Import local css/ JS files -->
+    <link href="./School Admin.css" rel="stylesheet" type="text/css">
+    <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./manager.js"></script>
+
+    <!-- import font packages -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <!-- Add title and favicon -->
+    <title>Mercado Escolar</title>
+    <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body class="d-flex flex-direction-column">
+    <!-- Header element containing navigation bar and links -->
+    <header class="d-flex justify-between nav-header">
+        <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">Mercado Escolar</a></div>
+        <nav class="navbar">
+            <ul class="d-flex justify-around flex-direction-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="../School Admin/Report.html">Reports and Insights</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="active-nav" href="#">School Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- side menu navigation for responsiveness -->
+    <header class="d-flex justify-between menu-header" style="display: none;">
+        <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer"
+                src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()">
+            <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">Mercado Escolar</a></div>
+        </div>
+        <div class="side-bar-navigation fade" id="side-bar-navigation">
+            <ul>
+                <li><a href="../School Admin/Reports.html">Reports and Insights</a></li>
+                <li><a href="#" id="side-active-nav">Super Admin</a></li>
+            </ul>
+        </div>
+        <script>
+            function showSideNav() {
+                let displayValue = document.getElementById('side-bar-navigation').style.display;
+
+                if (displayValue == 'none' || displayValue == '') { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+                    document.getElementById('side-bar-navigation').style.display = 'none';
+                }
+            }
+        </script>
+    </header>
+
+    <section>
+
+        <!-- Header section title -->
+        <div class="container" id="heading-container">
+            <div class="font-oswald heading"> Manage Daily Tasks </div>
+        </div>
+        
+
+        <!-- Admin and manager section tables structure -->
+        <div class="manage-container d-flex flex-direction-column align-items-around justify-evenly">
+
+            <!-- Horizontal row section containing multiple tables -->
+            <div class="d-flex flex-direction-row justify-around section-container">
+
+                <!-- Manage Order table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Students</span>
+                    <div class="table-container">
+                        <table id="order-table" class="material-table">
+                            <tbody>
+                                <tr>
+                                    <th>Student Id</th>
+                                    <th>Studnet Name</th>
+                                    <th>School Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                            onclick="addOrder()" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Manage equipment table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                    class="font-oswald section-header">Manage Clubs</span>
+                    <div class="table-container">
+                        <table id="delivery-table" class="material-table">
+                            <tr>
+                                <th>Club Id</th>
+                                <th>Club Name</th>
+                                <th>Phone no</th>
+                                <th>Email</th>
+                                <th class="text-align-center"><img class="cursor-pointer" onclick="addDeliveries()"
+                                        title="Add Record" src="../../assets/images/plus.png" title="Add a record"
+                                        height="13px" width="13px"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal row section containing multiple tables -->
+            <div class="d-flex flex-direction-row justify-around section-container" id="manager-actions">
+
+                <!-- Manual Order table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Businesses</span>
+                        <div class="table-container">
+                            <table id="tasks-table" class="material-table">
+                                <tr>
+                                    <th>Business Id</th>
+                                    <th>Business Name</th>
+                                    <th>Business Owner</th>
+                                    <th>Phone no</th>
+                                    <th>Email</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                            onclick="addTasks()" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- Manage tasks table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Posts</span>
+                    <div class="table-container">
+                        <table id="tasks-table" class="material-table">
+                            <tr>
+                                <th>Post Id</th>
+                                <th>Post Name</th>
+                                <th>Posted By</th>
+                                <th>Posted Time</th>
+                                <th>Post Description</th>
+                                <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                        onclick="addTasks()" src="../../assets/images/plus.png" height="13px"
+                                        width="13px"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+</body>
+
+</html>
