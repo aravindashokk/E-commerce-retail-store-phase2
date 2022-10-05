@@ -1,33 +1,40 @@
-Readme file
+Readme file -
 
-Index.html file is clicked-first and navigated to all pages Mercado Escolar
+Neeharika Kosana (1001960736)
+Aravind Ashok Kumar (1001944888)
+Vignesh Manikandan (1002012757)
 
-to login as user: give 'user' for username
+Index.html file is clicked-first and it navigates to all the pages in Mercado Escolar
 
-for visitor give 'visitor' as username
+To login as Student: Type 'Student' for username and submit.
 
-for 'manager' give 'manager' as username
+For Super Admin type 'Super Admin' as username and submit.
 
-for 'admin' give 'admin' as username and then click sigin to navigate to respective pages;
-no need for password.
+For School Admin type 'School Admin' as username and submit.
 
-to access this website in uta cloud go to the link
+For Business Owner type 'BusinessOwner' as username and submit.
+
+It will navigate to respective pages.
+No need to give password.
+
+To access this website in uta cloud go to the link
 
 
 
 
 
-Attributions
+References -
 
 for html and css reference -> 
-https://www.w3schools.com/
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://developer.mozilla.org/en-US/docs/Learn
+https://www.w3schools.com/html/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
+https://www.amazon.com/
+
 
 
 for icons and images ->
-https://www.iconfinder.com/
-https://www.freepik.com
+https://www.uta.edu/student-affairs/student-organizations
+https://images.google.com/
 
 fonts -->
 https://fonts.google.com/
