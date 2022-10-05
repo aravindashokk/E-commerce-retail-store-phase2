@@ -8,9 +8,9 @@ function login(element) {
     else if (userType === 'School Admin') {
         window.location.href = '../School Admin/School Admin.html'; }
     else if (userType === 'Student') {
-        window.location.href = '../Student/Student.html';
+        window.location.href = '../Student/student.html';
     } else if (userType === 'BusinessOwner') {
-        window.location.href = '../BusinessOwner/BusinessOwner.html';
+        window.location.href = '../BusinessOwner/businessOwner.html';
     }
 }
 
