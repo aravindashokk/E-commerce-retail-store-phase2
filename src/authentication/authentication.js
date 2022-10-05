@@ -7,8 +7,8 @@ function login(element) {
     }
     else if (userType === 'School Admin') {
         window.location.href = '../School Admin/School Admin.html'; }
-    else if (userType === 'user') {
-        window.location.href = '../Users/users.html';
+    else if (userType === 'Student') {
+        window.location.href = '../Student/Student.html';
     } else if (userType === 'BusinessOwner') {
         window.location.href = '../BusinessOwner/BusinessOwner.html';
     }
