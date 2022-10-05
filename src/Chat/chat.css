@@ -26,7 +26,9 @@ Vignesh Manikandan 1002012757
   --state-warning: #f9a825;
   --state-success: #558b2f;
 */
-
+.previous-chats{
+  height: 20%;
+}
 .container {
   background-color: var(--primary-bg-1);
   width: auto;
